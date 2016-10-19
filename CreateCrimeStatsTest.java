@@ -27,7 +27,10 @@ public class CreateCrimeStatsTest {
 		} catch (IOException e) {
 			e.printStackTrace();
 		} // end catch
-
+		
+	// Print JSON representation of crimeStats object
+	System.out.println("JSON: " + cityA.crimeStats.toJson()+ "\n");
+		
 		// print crime data years
     	System.out.print("Crime data years for " + args[0] + ", " + args[1] + ": ");
     	CrimeStats.print(cityA.crimeStats.getCrimeDataYears());
